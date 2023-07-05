@@ -207,6 +207,13 @@ input[type="text"]:focus {
   padding: 7rem 7%;
 }
 
+.container .message {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .search-container .categories {
   display: flex;
   justify-content: center;
