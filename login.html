@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Member</title>
+    <link rel="shortcut icon" href="img/icon_apotek_kesehatan.png" type="image/x-icon" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <style>
+    :root {
+      --primary: #14471e;
+      --bg: #90ee90;
+      --textcol: #2c5d37;
+      --hovertext: #45c460;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Source+Sans+3", sans-serif;
+    }
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: right;
+      background-image: url("img/bg_login2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 30px 175px 30px 30px;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      height: 80%;
+      margin-top: auto;
+      margin-bottom: auto;
+      background: whitesmoke;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+    }
+    .container .logo img {
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container .title {
+      font-size: 25px;
+      font-weight: 500;
+      position: relative;
+      font-weight: bold;
+      color: var(--primary);
+      padding-top: 10px;
+    }
+    .container form .user-details {
+      justify-content: space-between;
+      margin: 20px 0 12px 0;
+    }
+    .container .user-details .input-box {
+      margin-bottom: 15px;
+      width: calc(100% - 2px);
+    }
+    .user-details .input-box .details {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .user-details .input-box input {
+      height: 30px;
+      width: 100%;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid var(--hovertext);
+      padding-left: 10px;
+      font-size: 15px;
+      border-bottom-width: 3px;
+      transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+      border-color: var(--primary);
+    }
+
+    form button {
+      height: 45px;
+      margin-top: 35px;
+      margin-bottom: 10px;
+
+      width: 100%;
+      outline: none;
+      color: white;
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      background-color: var(--primary);
+    }
+    form button:hover {
+      background-color: var(--hovertext);
+      color: var(--primary);
+    }
+    form .text-reg a:hover {
+      color: var(--hovertext);
+    }
+
+    .text-reg a {
+      text-decoration: none;
+      color: var(--textcol);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        justify-content: center;
+        padding: 30px;
+      }
+      .container {
+        max-width: 400px;
+        width: 100%;
+      }
+      form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+      }
+      .container form .user-details {
+        max-height: 1300px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <br />
+      <div class="logo">
+        <a href="home.php">
+          <img src="img/Logo_Apotek_Kesehatan2.png" alt="background" />
+        </a>
+      </div>
+      <div class="title">Login</div>
+      <form method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="username" placeholder="Masukkan username" required />
+          </div>
+        </div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password" placeholder="Masukkan password" required />
+          </div>
+        </div>
+
+        <button type="submit" name="login_member">Login</button>
+
+        <div class="text-reg">
+          <a href="registrasi.html">Klik untuk Registration</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

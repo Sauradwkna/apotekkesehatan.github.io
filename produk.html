@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/icon_apotek_kesehatan.png" type="image/x-icon" />
+    <title>Produk</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">
+        <img src="img/Logo_Apotek_Kesehatan2.png" alt="logo mylibrary" />
+      </a>
+
+      <div class="navbar-nav">
+        <a class="links" href="index.html#beranda">Beranda</a>
+        <a class="links" href="index.html#produk">Produk</a>
+        <a class="links" href="index.html#about">Tentang Kami</a>
+        <a class="links" href="#kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#"><i></i></a>
+        <a href="login.html" id="button"><button>Login</button></a>
+        <a href="#" id="hamburger-menu" class="hmenu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Search start -->
+    <div class="search-container">
+      <div class="categories">
+        <input type="text" class="search-input" id="search-input" placeholder="Cari produk..." />
+        <button class="search-btn" id="search-button"><i data-feather="search"></i></button>
+        <div class="category active" onclick="showProducts(this, '#Semua')">Semua</div>
+        <div class="category" onclick="showProducts(this, '#ObatBatuk')">Obat Batuk</div>
+        <div class="category" onclick="showProducts(this, '#ObatDemam')">Obat Demam</div>
+        <div class="category" onclick="showProducts(this, '#ObatSakitKepala')">Obat Sakit Kepala</div>
+        <div class="category" onclick="showProducts(this, '#ObatMasukAngin')">Obat Masuk Angin</div>
+      </div>
+    </div>
+    <!-- Search end -->
+
+    <!-- Kategori start -->
+    <div class="container">
+      <div class="product-grid" id="Semua">
+        <div class="card" id="ObatBatuk">
+          <img src="img/OBH Combi Batuk Berdahak Rasa Menthol Sirup 100 ml.jpg" alt="Produk 1" />
+          <h3>OBH Combi 100 ml</h3>
+          <p>Per Botol</p>
+          <h6>Rp 15.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatDemam">
+          <img src="img/Bimacyl 10 Tablet.png" alt="Produk 2" />
+          <h3>Bimacyl</h3>
+          <p>10 Tablet</p>
+          <h6>Rp 5.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatSakitKepala">
+          <img src="img/Anastan Forte 500 Mg 10 Kaplet.jpg" alt="Produk 3" />
+          <h3>Anastan Forte 500 mg</h3>
+          <p>10 Kaplet</p>
+          <h6>Rp 5.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatMasukAngin">
+          <img src="img/Antangin JRG 4 Tablet.jpg" alt="Produk 4" />
+          <h3>Antangin JRG</h3>
+          <p>4 Tablet</p>
+          <h6>Rp 4.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <!-- Tambahkan card produk lainnya di sini -->
+        <div class="card" id="ObatBatuk">
+          <img src="img/Bisolvon 8 Mg 10 Tablet.jpg" alt="Produk 1" />
+          <h3>Bisolvon 8 mg</h3>
+          <p>10 Tablet</p>
+          <h6>Rp 28.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatDemam">
+          <img src="img/Alphamol 600 Mg 10 Kaplet.jpg" alt="Produk 2" />
+          <h3>Alphamol 600 mg</h3>
+          <p>10 Kaplet</p>
+          <h6>Rp 10.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatSakitKepala">
+          <img src="img/Antrain 500 Mg 10 Tablet.jpg" alt="Produk 3" />
+          <h3>Antrain 500 mg</h3>
+          <p>10 Tablet</p>
+          <h6>Rp 35.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="ObatMasukAngin">
+          <img src="img/Cap Lang Minyak Kayu Putih Eucalyptus 60 Ml.jpg" alt="Produk 4" />
+          <h3>Minyak Kayu Putih 60 ml</h3>
+          <p>Per Botol</p>
+          <h6>Rp 28.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <!-- Tambahkan card produk lainnya di sini -->
+        <div class="card" id="ObatBatuk">
+          <img src="img/Acetin 200 mg 10 kapsul.png" alt="Produk 1" />
+          <h3>Acetin 200 mg</h3>
+          <p>10 Kapsul</p>
+          <h6>Rp 36.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="">
+          <img src="img/Promag Double Action 6 Tablet.jpeg" alt="Produk 2" />
+          <h3>Promag</h3>
+          <p>6 Tablet</p>
+          <h6>Rp 8.500</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="">
+          <img src="img/Neurobion Forte 5000 10 Tablet.png" alt="Produk 3" />
+          <h3>Neurobion Forte 5000</h3>
+          <p>10 Tablet</p>
+          <h6>Rp 50.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+        <div class="card" id="">
+          <img src="img/Insto Dry Eyes Tetes Mata 7,5 ml.jpeg" alt="Produk 4" />
+          <h3>Insto Dry Eyes 7.5 ml</h3>
+          <p>Per Botol</p>
+          <h6>Rp 15.000</h6>
+          <button>Beli Sekarang</button>
+        </div>
+      </div>
+      <p id="not-found-message" style="display: none">Tidak ditemukan.</p>
+    </div>
+    <!-- Kategori end -->
+
+    <!-- Footer start -->
+    <section class="footer" id="kontak">
+      <div class="kontak">
+        <div class="footer-img">
+          <img src="img/Logo_Apotek_Kesehatan2.png" alt="Apotek Kesehatan" />
+        </div>
+        <div class="info">
+          <h4>Informasi Kontak</h4>
+          <p>Alamat: Jl. Cempaka Timur Blok B3, Pulo Gadung, Jakarta Timur, DKI Jakarta. 12345</p>
+          <p>ApoteKesehatan@gmail.com</p>
+          <p>Telepon: +21 111 234 987</p>
+        </div>
+      </div>
+      <div class="credit">
+        <p>Dibuat oleh <a href="">Apotek Kesehatan</a>. | &copy; 2023</p>
+      </div>
+    </section>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+      // Fungsi untuk menampilkan produk sesuai dengan kategori yang dipilih
+      function showProducts(categoryElement, category) {
+        const categories = document.querySelectorAll(".category");
+        categories.forEach((cat) => {
+          cat.classList.remove("active");
+        });
+
+        categoryElement.classList.add("active");
+
+        const selectedCategory = document.querySelector(category);
+        selectedCategory.classList.add("active");
+
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+          if (category === "#Semua" || card.id === category.substring(1)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        const cardsContainer = document.querySelector(".product-grid");
+        const sortedCards = Array.from(cardsContainer.getElementsByClassName("card"));
+
+        sortedCards.sort((a, b) => {
+          const titleA = a.querySelector("h3").textContent.toUpperCase();
+          const titleB = b.querySelector("h3").textContent.toUpperCase();
+          if (titleA < titleB) return -1;
+          if (titleA > titleB) return 1;
+          return 0;
+        });
+
+        cardsContainer.innerHTML = "";
+        sortedCards.forEach((card) => {
+          cardsContainer.appendChild(card);
+        });
+      }
+
+      // Fungsi untuk mencari produk berdasarkan inputan teks
+      const searchInput = document.getElementById("search-input");
+      searchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          searchProducts();
+        }
+      });
+
+      const searchButton = document.getElementById("search-button");
+      searchButton.addEventListener("click", searchProducts);
+
+      function searchProducts() {
+        const searchInput = document.getElementById("search-input");
+        const searchText = searchInput.value.toUpperCase();
+
+        const cards = document.querySelectorAll(".card");
+        let cardFound = false; // Menandakan apakah ada card yang ditemukan
+
+        cards.forEach((card) => {
+          const title = card.querySelector("h3").textContent.toUpperCase();
+          if (title.includes(searchText)) {
+            card.style.display = "block";
+            cardFound = true; // Setel cardFound menjadi true jika ada card yang ditemukan
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        const notFoundMessage = document.getElementById("not-found-message");
+        if (cardFound) {
+          notFoundMessage.style.display = "none"; // Sembunyikan pesan jika ada card yang ditemukan
+        } else {
+          notFoundMessage.style.display = "block"; // Tampilkan pesan jika tidak ada card yang ditemukan
+        }
+      }
+    </script>
+
+    <!-- My Javascript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
