@@ -740,6 +740,33 @@ input[type="text"]:focus {
     box-shadow: 0px 21px 53px rgba(20, 71, 30, 0.5);
   }
 
+  .search-container {
+    padding: 10rem 7% 0rem;
+  }
+  .search-container .categories {
+    display: block;
+    justify-content: center;
+    margin: 0px 0px 75px 0px;
+    padding: 10px;
+    background-color: whitesmoke;
+  }
+
+  .search-container .categories .category {
+    margin: 10px 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    color: var(--textcol);
+  }
+
+  .search-container .categories .category.active {
+    font-weight: bold;
+    background-color: var(--textcol);
+    color: white;
+    border-radius: 5px;
+  }
+
   .search-button {
     font-size: 12px;
     padding: 10px 20px 10px 20px;
