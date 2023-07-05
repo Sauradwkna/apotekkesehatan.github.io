@@ -191,7 +191,7 @@ input[type="text"]:focus {
   margin-top: 225px;
   left: 20%;
   transform: translate(-50%, -50%);
-  width: 57%;
+  width: 50%;
   text-align: -webkit-right;
 }
 
